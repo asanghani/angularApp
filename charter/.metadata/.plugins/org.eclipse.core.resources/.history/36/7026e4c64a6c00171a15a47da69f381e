@@ -1,0 +1,5 @@
+package com.delta.charter.domain.security;
+
+public class Authority {
+
+}

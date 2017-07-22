@@ -1,0 +1,8 @@
+package com.delta.charter.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class UserSecurityService implements UserDetailService {
+
+}

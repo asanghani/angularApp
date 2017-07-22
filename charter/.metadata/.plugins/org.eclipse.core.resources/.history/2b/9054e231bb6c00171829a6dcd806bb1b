@@ -1,0 +1,9 @@
+package com.delta.charter.service;
+
+import com.delta.charter.domain.Role;
+
+public interface RoleService {
+	
+	Role createRole(Role role);
+
+}

@@ -1,0 +1,5 @@
+package com.delta.charter.resource;
+
+public class LoginResource {
+
+}

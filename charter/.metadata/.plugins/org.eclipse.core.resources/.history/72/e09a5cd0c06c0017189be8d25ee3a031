@@ -1,0 +1,28 @@
+package com.delta.charter;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.delta.charter.domain.UserRole;
+import com.delta.charter.service.RoleService;
+
+@SpringBootApplication
+public class CharterAppApplication implements CommandLineRunner {
+	
+	@Autowired
+	private RoleService roleService;
+	public static void main(String[] args) {
+		SpringApplication.run(CharterAppApplication.class, args);
+	}
+
+	@Override
+	public void run(String... arg0) throws Exception {
+		UserRole role1 = new UserRole();
+		role1.setRoleId(0);
+		role1.setName("admin");
+		
+		roleService.createRole(role1);
+	}
+}

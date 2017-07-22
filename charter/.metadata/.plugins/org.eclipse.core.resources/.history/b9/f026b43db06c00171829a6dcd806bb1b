@@ -1,0 +1,5 @@
+package com.delta.charter.repository;
+
+public interface RoleRepository {
+
+}

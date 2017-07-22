@@ -1,0 +1,9 @@
+package com.delta.charter.config;
+
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+
+@Configuration
+@EnableWebSecurity
+public class SecurityConfig extends WebMvcConfigurerAdapter{
+
+}

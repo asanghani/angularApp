@@ -1,0 +1,6 @@
+package com.delta.charter.service.impl;
+
+@service
+public class RoleServiceImpl {
+
+}

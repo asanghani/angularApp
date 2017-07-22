@@ -1,0 +1,24 @@
+package com.delta.charter;
+
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.delta.charter.domain.Role;
+
+@SpringBootApplication
+public class CharterAppApplication implements CommandLineRunner {
+
+	public static void main(String[] args) {
+		SpringApplication.run(CharterAppApplication.class, args);
+	}
+
+	@Override
+	public void run(String... arg0) throws Exception {
+		Role role1 = new Role();
+		role1.setRoleId(0);
+		role1.setName("admin");
+		
+		roleService.createRole(role1);
+	}
+}

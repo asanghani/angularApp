@@ -1,0 +1,11 @@
+package com.delta.charter.service;
+
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
+
+@Service
+public class UserSecurityService implements UserDetailService {
+	
+	private static final Logger LOG = LoggerFactory.getLogger(UserSecurityService.class)
+
+}

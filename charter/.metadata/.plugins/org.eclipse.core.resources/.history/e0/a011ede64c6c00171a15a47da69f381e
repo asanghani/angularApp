@@ -1,0 +1,12 @@
+package com.delta.charter.domain.security;
+
+import java.io.Serializable;
+import java.util.Set;
+
+public class Role implements Serializable {
+	
+	private int roleId;
+	private String name;
+	private Set<UserRole> userRoles = new HashSet<>();
+
+}

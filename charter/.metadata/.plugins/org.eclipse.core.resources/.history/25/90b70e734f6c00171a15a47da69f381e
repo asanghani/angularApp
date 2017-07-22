@@ -1,0 +1,8 @@
+package com.delta.charter.domain.security;
+
+import java.io.Serializable;
+
+public class UserRole implements Serializable {
+	private static final long serialVersionUID = 133123L;
+
+}

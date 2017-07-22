@@ -1,0 +1,13 @@
+package com.delta.charter.repository;
+
+import java.util.List;
+
+import com.delta.charter.domain.User;
+
+
+public interface UserRepository {
+	List<User> findAll();
+	User findByEmail(String email);
+//  save(UserRole role);
+
+}

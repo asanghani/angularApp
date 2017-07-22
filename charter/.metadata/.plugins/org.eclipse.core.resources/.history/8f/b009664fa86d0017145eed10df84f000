@@ -1,0 +1,6 @@
+package com.delta.charter.config;
+
+@EnableRedisHttpSession
+public class HttpSessionConfig {
+
+}

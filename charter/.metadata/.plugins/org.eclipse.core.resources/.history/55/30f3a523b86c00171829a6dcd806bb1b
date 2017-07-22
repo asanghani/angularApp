@@ -1,0 +1,5 @@
+package com.delta.charter.service;
+
+public interface RoleService {
+
+}

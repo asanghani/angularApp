@@ -1,0 +1,41 @@
+package com.delta.charter;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.delta.charter.config.SecurityUtility;
+import com.delta.charter.domain.User;
+import com.delta.charter.domain.UserRole;
+import com.delta.charter.service.RoleService;
+import com.delta.charter.service.UserService;
+
+
+@SpringBootApplication
+public class CharterAppApplication implements CommandLineRunner {
+	
+	@Autowired
+	private UserService userService;
+	
+	@Autowired
+	private RoleService roleService;
+	
+	public static void main(String[] args) {
+		SpringApplication.run(CharterAppApplication.class, args);
+	}
+
+	@Override
+	public void run(String... arg0) throws Exception {
+		/*User user = new User();
+		user.setUsername("u1");;
+		user.setFirstname("Alpesh");
+		user.setLastname("Sanghani");
+		user.setMobilenumber(614440023);
+		user.setOfficenumber(614440023);
+		user.setPassword("alpesh");
+		//user.setPassword(SecurityUtility.passwordEncoder().encode("p"));
+		user.setRoleid(0);
+		userService.createUser(user);*/
+	}   
+}

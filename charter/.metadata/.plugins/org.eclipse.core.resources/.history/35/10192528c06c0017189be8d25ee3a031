@@ -1,0 +1,31 @@
+package com.delta.charter.domain;
+
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class UserRole implements Serializable {
+	private static final long serialVersionUID = 123523L;
+	@Id
+	private int roleId;
+	private String name;
+	
+
+	public int getRoleId() {
+		return roleId;
+	}
+
+	public void setRoleId(int roleId) {
+		this.roleId = roleId;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+}
